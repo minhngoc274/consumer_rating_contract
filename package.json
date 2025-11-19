@@ -1,0 +1,23 @@
+{
+  "name": "cross-chain-rating-system",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:fork": "FORK_ENABLED=true hardhat test test/CrossChain.fork.test.ts",
+    "deploy:sender": "hardhat deployRatingSender",
+    "deploy:consumer": "hardhat deployRatingConsumer"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "dotenv": "^16.3.1"
+  }
+}
