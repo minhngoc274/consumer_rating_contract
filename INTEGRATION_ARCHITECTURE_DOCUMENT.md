@@ -52,7 +52,7 @@ Mitigation:
 - Stale messages automatically fallback to conservative LTV
 - Aave continues operating normally without cross-chain dependency
 
-###Incorrect Rating or Malicious Input
+### Incorrect Rating or Malicious Input
 An authorized rater, backend service, or compromised API could submit an incorrect or malicious rating (e.g., inflated score), causing borrowers to receive artificially high LTV.
 
 Mitigation:
